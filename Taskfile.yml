@@ -123,8 +123,8 @@ tasks:
       - "{{.RELEASE_PRECHECK}}"
       # - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG}}
       # - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG_LATEST}}
-      - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/ansible/{{.CNT_NAME_TAG}}
-      - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/ansible/{{.CNT_NAME_TAG_LATEST}}
+      - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/buluma/{{.CNT_NAME_TAG}}
+      - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/buluma/{{.CNT_NAME_TAG_LATEST}}
     interactive: true
   release-base:
     desc: Publish creator-base container (used by CI)
@@ -135,6 +135,6 @@ tasks:
       - "{{.RELEASE_PRECHECK}}"
       # - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG}}
       # - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG_LATEST}}
-      - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/ansible/{{.CNT_NAME_TAG}}
-      - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/ansible/{{.CNT_NAME_TAG_LATEST}}
+      - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/buluma/{{.CNT_NAME_TAG}}
+      - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/buluma/{{.CNT_NAME_TAG_LATEST}}
     interactive: true
