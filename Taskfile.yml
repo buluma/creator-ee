@@ -121,8 +121,8 @@ tasks:
       - task: build
         vars: *env
       - "{{.RELEASE_PRECHECK}}"
-      - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG}}
-      - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG_LATEST}}
+      # - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG}}
+      # - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG_LATEST}}
       - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/ansible/{{.CNT_NAME_TAG}}
       - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/ansible/{{.CNT_NAME_TAG_LATEST}}
     interactive: true
@@ -133,8 +133,8 @@ tasks:
       - task: base
         vars: *base-vars
       - "{{.RELEASE_PRECHECK}}"
-      - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG}}
-      - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG_LATEST}}
+      # - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG}}
+      # - podman manifest push {{.CNT_NAME_TAG}} quay.io/ansible/{{.CNT_NAME_TAG_LATEST}}
       - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/ansible/{{.CNT_NAME_TAG}}
       - podman manifest push {{.CNT_NAME_TAG}} ghcr.io/ansible/{{.CNT_NAME_TAG_LATEST}}
     interactive: true
