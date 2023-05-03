@@ -7,8 +7,7 @@ on:
     paths:
       - "base/**"
   schedule:
-    # Sunday at 2am UTC
-    - cron: "7 * * * *"
+    - cron: "7 3/6 * * *"
 jobs:
   task:
     name: ${{ matrix.command }}
